@@ -1,0 +1,16 @@
+td{
+      padding-top: 3vh;
+      text-align: right;
+      padding-right: 2vw;
+}
+
+input{
+    width:50vw;
+}
+
+select{
+    border-radius: 0.5vh; /*圓角*/
+    border: 2px solid #999999; /*邊框2px粗，樣式為solid實線*/
+    font-size: 4vh;
+    color: #999999;
+}

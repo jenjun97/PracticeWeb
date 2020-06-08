@@ -1,0 +1,39 @@
+body{
+    color:#999999;
+    font-size: 4vh;
+}
+
+
+input{
+    /*color:#999999;*/
+    border-radius: 0.5vh; /*圓角*/
+    border: 2px solid #999999; /*邊框2px粗，樣式為solid實線*/
+    /*    padding-left: -15%; 框左內距
+        padding-right: -15%; 框右F內距*/
+    font-size: 4vh;
+    /*    width: 20%; 高
+        height: 100%; 寬*/
+}
+
+button{
+    border: 2px solid #999999; /*邊框2px粗，樣式為solid實線*/
+    border-radius: 0.5vh; /*圓角*/
+    color: #999999;
+    padding: 1vh 2vh;
+    text-align: center;
+    display: inline-block;
+    font-size: 4vh;
+}
+
+
+/*-------------------------------------------------------------------id*/
+
+#logo{
+    /*overflow: hidden;*/
+    /*    padding-top: -35%;
+        padding-bottom: -35%;*/
+    margin-top: -8vh;
+    margin-bottom: -9vh;
+    max-width: 21vh;
+    height: auto;
+}

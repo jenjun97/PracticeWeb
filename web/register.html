@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head lang="zh-Hant-TW">
+        <meta charset="UTF-8">
+        <title>註冊頁</title>
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="css/register.css">
+        <script src="js/other/CityAndArea.js"></script>
+    </head>
+
+    <body>
+        <div align="center" style="margin-top: 10vw;font-size:4rem;">註冊</div>
+        <form action="registerServlet.html" method="GET" onsubmit="return check()">
+            <div  align="center">
+                <table style="margin-left: 2vw;">
+                    <!---------------------------------------------------------姓名-->
+                    <tr>
+                        <td><label for="inputName">姓名</label></td>
+                        <td><input type="text" id="inputName" name="inputName" required value="testName"></td>
+                    </tr>
+                    <!---------------------------------------------------------email-->
+                    <tr>
+                        <td><label for="inputEmail">E-mail</label></td>
+                        <td><input type="email" id="inputEmail" name="inputEmail" onblur="checkEmail(this)" required value="testEmail@email.com">
+                            <a id="EmailMessage" style="display: none;text-align: left;color:red;"></a>
+                        </td>
+
+                    </tr>
+                    <!---------------------------------------------------------密碼-->
+                    <tr>
+                        <td><label for="inputPassword">設定密碼</label></td>
+                        <td><input type="password" id="inputPassword" name="inputPassword" required value="4321"></td>
+                    </tr>
+                    <!---------------------------------------------------------密碼再一次-->
+                    <tr>
+                        <td><label for="inputPasswordAgain">再輸入一次</label></td>
+                        <td><input type="password" id="inputPasswordAgain" name="inputPasswordAgain" value="4321"></td>
+                    </tr>
+                    <!---------------------------------------------------------性別-->
+                    <tr>
+                        <td><label for="inputSex">性別</label></td>
+                        <td style="text-align:left;">
+                            <select id="inputSex" name="inputSex">
+                                <option value="M">男性</option>
+                                <option value="F">女性</option>
+                                <option value="O">其他</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!---------------------------------------------------------出生日-->
+                    <tr>
+                        <td><label for="inputBirth">出生日</label></td>
+                        <td><input type="date" id="inputBirth" name="inputBirth" value="2020-06-03"></td>
+                    </tr>
+                    <!---------------------------------------------------------聯絡電話-->
+                    <tr>
+                        <td><label for="inputPhone">聯絡電話</label></td>
+                        <td><input type="tel" id="inputPhone" name="inputPhone" value="0987654321"></td>
+                    </tr>
+                    <!---------------------------------------------------------地址-->
+                    <tr>
+                        <td><label for="inputCity">地址</label></td>
+                        <td style="text-align: left">
+                            <select id="inputCity" name="inputCity" onchange="optCityChange(this.value)">
+                            </select>
+                            <select id="inputArea" name="inputArea">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="inputAddress"></label></td>
+                        <td><input type="text" id="inputAddress" name="inputAddress" value="天龍街1號"></td>
+                    </tr>
+
+                </table>
+
+                <table align="center">
+                    <tr>
+                        <td><button type="submit">送出</button></td>
+                        <td><button type="button" onclick="window.history.go(-1);">返回</button></td>
+                    </tr>
+                </table>
+
+                <input type="hidden" value="aabbab" id="hiddenValue">
+            </div>
+        </form>
+    </body>
+    <script type="text/javascript" src="js/register.js"></script>
+
+</html>  
