@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head lang="zh-Hant-TW">
+        <title>登入</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/template.css">
+    </head>
+    <body>
+
+        <br/>
+        <div align="center">
+            <form action="" method="GET">
+                <table border="0" style="width:80vw;">
+                    <tr>
+                        <td width="20vw"></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td  align="center" colspan="2"><img id="logo" src="img/logo.png"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2">登入</td>
+                    </tr>
+                    <!-------------------------------------------------------------------------帳號欄位-->
+                    <tr>
+                        <td style="text-align: center; width: 20vw;">
+                            <label for="inputEmail">E-mail</label>
+                        </td>
+                        <td style="valign: middle;">
+                            <input type="email" id="inputEmail" name="inputEmail" style="width:100%;" placeholder="your Email">
+                        </td>
+                    </tr>
+
+                    <!-------------------------------------------------------------------------密碼欄位-->
+                    <tr>
+                        <td style="text-align: center;">
+                            <label for="inputPassword">密碼</label>
+                        </td>
+                        <td style="valign: middle;">
+                            <input type="password" id="inputPassword" name="inputPassword" style="width:100%;" maxlength="10" placeholder="press password">
+                        </td>
+                    </tr>
+                </table>
+
+                <br/>
+                <!-------------------------------------------------------------------------按鈕欄位-->
+                <table border="0" style="width: 50vw">
+                    <tr>
+                        <td style="text-align: center;width: 50%">
+                            <button type="button" id="login" onclick="toLogin()">登入</button>
+                        </td>
+                        <td style="text-align: center;width:50%">
+                            <button type="button" id="registered" onclick="register()">註冊</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <p id="warningMessage" align="center" style="color:red; font-size: 4vw;"></p>
+    </body>
+
+    <script type="text/javascript" src="js/login.js"></script>
+</html>

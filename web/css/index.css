@@ -1,0 +1,17 @@
+@import "template.css";
+
+body{
+    font-size: 2vh;
+}
+
+button{
+    font-size: 2vh;
+    width: 13vh;
+}
+
+.MenuBar{
+    position: fixed;
+    /*float: right;*/
+    right: 1vw;
+    top:1vw;
+}

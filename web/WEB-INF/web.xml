@@ -2,7 +2,7 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>loginServlet</servlet-name>
-        <servlet-class>index.loginServlet</servlet-class>
+        <servlet-class>login.loginServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>checkEmailServlet</servlet-name>
@@ -11,6 +11,26 @@
     <servlet>
         <servlet-name>registerServlet</servlet-name>
         <servlet-class>register.registerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>logout.logoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ChangeUserDataServlet</servlet-name>
+        <servlet-class>ChangeUserData.ChangeUserDataServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagementChangeUserDataServlet</servlet-name>
+        <servlet-class>ManagementUser.ManagementChangeUserDataServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagementGetUserDataServlet</servlet-name>
+        <servlet-class>ManagementUser.ManagementGetUserDataServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deleteUserEmailServlet</servlet-name>
+        <servlet-class>deleteUser.deleteUserEmailServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
@@ -23,6 +43,26 @@
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/registerServlet.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/logoutServlet.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChangeUserDataServlet</servlet-name>
+        <url-pattern>/ChangeUserDataServlet.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagementChangeUserDataServlet</servlet-name>
+        <url-pattern>/ManagementChangeUserDataServlet.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagementGetUserDataServlet</servlet-name>
+        <url-pattern>/ManagementGetUserDataServlet.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteUserEmailServlet</servlet-name>
+        <url-pattern>/deleteUserEmailServlet.html</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
